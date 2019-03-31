@@ -1,10 +1,9 @@
-/**
- * @author v.lugovsky
- * created on 10.12.2016
- */
-(function () {
-  'use strict';
+import angular from 'angular';
+import baSwitcher from './baSwitcher/baSwitcher.component';
 
-  angular.module('BlurAdmin.theme.inputs', []);
+const themeInputModule = 'app.theme.inputs';
 
-})();
+angular.module(themeInputModule, [])
+    .component('baSwitcher', baSwitcher);
+
+export default themeInputModule;

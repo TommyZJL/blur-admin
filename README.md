@@ -1,48 +1,89 @@
-[![Build Status](https://travis-ci.org/akveo/blur-admin.svg?branch=master)](https://travis-ci.org/akveo/blur-admin)
+# angularjs-webpack
 
-# BlurAdmin Angular admin panel front-end framework
+[![Dependency Status](https://david-dm.org/preboot/angularjs-webpack/status.svg)](https://david-dm.org/preboot/angular-webpack#info=dependencies) [![devDependency Status](https://david-dm.org/preboot/angularjs-webpack/dev-status.svg)](https://david-dm.org/preboot/angularjs-webpack#info=devDependencies)
 
-Customizable admin panel framework made with :heart: by [Akveo team](http://akveo.com/). Follow us on [Twitter](https://twitter.com/akveo_inc) to get latest news about this template first!
+A complete, yet simple, starter for AngularJS using Webpack.
 
-### Demo
-**[Mint version demo](http://akveo.com/blur-admin-mint/)**             |  **[Blur version demo](http://akveo.com/blur-admin/)**
-:-------------------------:|:-------------------------:
-![Mint version demo](http://i.imgur.com/A3TMviJ.png)  |  ![Blur version demo](http://i.imgur.com/EAoiK2O.jpg)
+This workflow serves as a starting point for building AngularJS (1.x) applications using Webpack 2.x. Should be noted that apart from the pre-installed angular package, this workflow is pretty much generic.
 
-## Angular 2 version
-Here you can find Angular2 based version: [ng2-admin](https://github.com/akveo/ng2-admin).
+* Heavily commented webpack configuration with reasonable defaults.
+* ES6, and ES7 support with babel.
+* Source maps included in all builds.
+* Development server with live reload.
+* Production builds with cache busting.
+* Testing environment using karma to run tests and jasmine as the framework.
+* Code coverage when tests are run.
+* No gulp and no grunt, just npm scripts.
 
-### Documentation
-Installation, customization and other useful articles: https://akveo.github.io/blur-admin/
+>Warning: Make sure you're using the latest version of Node.js and NPM
 
-*If you have problems installing and just want to download JS and css files, you can find download links here*: http://akveo.github.io/blur-admin/articles/091-downloads/
+### Quick start
 
-## How can I support developers?
-- Star our GitHub repo
-- Create pull requests, submit bugs, suggest new features or documentation updates
-- Follow us on [Twitter](https://twitter.com/akveo_inc)
-- Like our page on [Facebook](https://www.facebook.com/akveo/)
+> Clone/Download the repo then edit `app.js` inside [`/src/app/app.js`](/src/app/app.js)
 
-## Can I hire you guys?
-Yes! We are available for hire. Visit [our homepage](http://akveo.com/) or simply leave us a note to contact@akveo.com. We will be happy to work with you!
+```bash
+# clone our repo
+$ git clone https://github.com/preboot/angularjs-webpack.git my-app
 
-## Features
-* Responsive layout
-* High resolution
-* Bootstrap CSS Framework
-* Sass
-* Gulp build
-* AngularJS
-* Jquery
-* Charts (amChart, Chartist, Chart.js, Morris)
-* Maps (Google, Leaflet, amMap)
-* etc
+# change directory to your app
+$ cd my-app
 
-License
--------------
-<a href=/LICENSE.txt target="_blank">MIT</a> license.
+# install the dependencies with npm
+$ npm install
 
-### From akveo
+# start the server
+$ npm start
+```
 
-Enjoy!
-We're always happy to hear your feedback.
+go to [http://localhost:8080](http://localhost:8080) in your browser.
+
+# Table of Contents
+
+* [Getting Started](#getting-started)
+    * [Dependencies](#dependencies)
+    * [Installing](#installing)
+    * [Running the app](#running-the-app)
+    * [Developing](#developing)
+    * [Testing](#testing)
+* [License](#license)
+
+# Getting Started
+
+## Dependencies
+
+What you need to run this app:
+* `node` and `npm` (Use [NVM](https://github.com/creationix/nvm))
+* Ensure you're running Node (`v4.1.x`+) and NPM (`2.14.x`+)
+
+## Installing
+
+* `fork` this repo
+* `clone` your fork
+* `npm install` to install all dependencies
+
+## Running the app
+
+After you have installed all dependencies you can now run the app with:
+```bash
+npm start
+```
+
+It will start a local server using `webpack-dev-server` which will watch, build (in-memory), and reload for you. The port will be displayed to you as `http://localhost:8080`.
+
+## Developing
+
+### Build files
+
+* single run: `npm run build`
+* build files and watch: `npm start`
+
+## Testing
+
+#### 1. Unit Tests
+
+* single run: `npm test`
+* live mode (TDD style): `npm run test-watch`
+
+# License
+
+[MIT](/LICENSE)
