@@ -29,6 +29,6 @@ angular.module(themeComponentsModule, [])
     .directive('progressBarRound', progressBarRound)
     .directive('pageTop', pageTop)
     .directive('widgets', widgets)
-    .controller('BaSidebarCtrl', BaSidebarCtrl);;
+    .controller('BaSidebarCtrl', BaSidebarCtrl);
 
 export default themeComponentsModule;
